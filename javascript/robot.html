@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Locator</title>
+</head>
+<body>
+    <script>
+        function trackRobot (startingPoint, movementsArray) {
+    //movementsArray is an array with directions north, south, east, west that correspond to indices [0,1,2,3]
+    //add movementsArray to starting coordinates
+
+    //north and south are y coordinates: north is positive y, south is negative y
+    //east and west are x coordinates: east is positive x, west is positive x
+
+    //calculate north by adding (0,0)
+    // let elem = document.getElementById('currentLocation');
+    var currentLocation = [0,0];
+
+    //move north by adding to y coordinate
+    currentLocation[1] = startingPoint[0] + movementsArray[0];
+    // //should result in [0,20]
+    
+    // //move east by adding to x coordinate
+    currentLocation[0] = startingPoint[0] + movementsArray[1];
+    // //should ressult in [30,20]
+
+    // //move south by subtracting from y coordinate
+    currentLocation[1] = startingPoint[0] + movementsArray[2];
+    // //should result in [30, 10]
+    
+    // //move west by subtracting
+    currentLocation[0] -= startingPoint[0] + movementsArray[3];
+    //should result in [-10, 10]
+    
+    var newLocation = document.getElementById('currentLocation');
+    newLocation.innerHTML = "Current location is: (" + currentLocation + ")";
+}
+//north +y, south -y, east = x, west = -x 
+
+    </script>
+    <h1>Robot</h1>
+    
+    <button onclick="trackRobot([0,0], [20,30,10,40]);">Move</button>
+    <p id="currentLocation">Starting point: 0,0</p> 
+    
+</body>
+</html>
