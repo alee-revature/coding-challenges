@@ -1,0 +1,3 @@
+1) How would you deploy software to 5000 nodes?
+
+

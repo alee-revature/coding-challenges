@@ -1,0 +1,6 @@
+2) How would you introduce Continuous Delivery in a successful, huge company 
+for which the change from Waterfall to Continuous Delivery would be not trivial, 
+because of the size and complexity of the business?
+
+I would tell them the benefits and say that it allows for more profit/ revenue
+and allow for faster testing and development

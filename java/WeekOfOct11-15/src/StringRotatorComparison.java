@@ -10,9 +10,6 @@ import java.util.Scanner;
 public class StringRotatorComparison {
     public static void main(String[] args) {
     	
-    	String test = "abcd";
-    	String rotatedString = "dabc";
-    	
     	Scanner input = new Scanner(System.in);
     	System.out.println("Enter a string: ");
     	String str1 = input.nextLine();
