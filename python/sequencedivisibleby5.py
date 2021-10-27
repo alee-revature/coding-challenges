@@ -13,11 +13,28 @@
 
 #get number from list of numbers and iterate through the array
 
-sequence = [0o0100, 0o0011, 1010, 1001]
+testData = [0o0100, 0o0011, 1010, 1001]
+sequence = []
 
 def divisibleBy5(sequence):
     for number in sequence :
         if (number % 5 == 0):
             print(number)
 
+divisibleBy5(testData)
+
+#user input sequence
+#loop to accept 4 digit binary numbers as input
+
+for i in range (0,4):
+    num = int(input("Enter a number: "))
+    #append to list sequence
+    sequence.append(num)
+    
 divisibleBy5(sequence)
+
+
+#need to treat as binary numbers
+     
+
+
