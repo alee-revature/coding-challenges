@@ -10,30 +10,14 @@
 #Notes: Assume the data is input by console.
 
 #use o as prefix for binary numbers
-numbers = [0o100, 0o011, 1010, 1001]
+
 #get number from list of numbers and iterate through the array
 
+sequence = [0o0100, 0o0011, 1010, 1001]
 
+def divisibleBy5(sequence):
+    for number in sequence :
+        if (number % 5 == 0):
+            print(number)
 
-def divisibleBy5(number):
-
-    #if number is divisible by 5, print the number
-    if (number % 5 == 0):
-        print(number)
-    elif (number % 5 != 0):
-        output = "not divisible by 5"
-        print(output)
-    else:
-        output = "error. please try again"
-        print(output)
-
-divisibleBy5(0o100)
-divisibleBy5(0o011)
-divisibleBy5(1010)
-divisibleBy5(1001)
-
-number = int(input("Enter a number: "))
-divisibleBy5(number)
-
-
-#left to do: need to make this function work for sequences and loop through indeces
+divisibleBy5(sequence)
